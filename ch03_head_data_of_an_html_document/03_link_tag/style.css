@@ -1,0 +1,8 @@
+p {
+  border: 5px solid blue;
+  width: 300px;
+  text-align: center;
+  padding: 10px 20px 10px 20px;
+  background-color: lightblue;
+  font-weight: bold;
+}
