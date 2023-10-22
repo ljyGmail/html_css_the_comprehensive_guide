@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>List</title>
+    <meta charset="UTF-8" />
+  </head>
+  <body>
+    <article>
+      <!-- 4.2.10 Creating Unordered Lists Using ul and li -->
+      <h2>Unordered bullet list with ul</h2>
+      <ul>
+        <li>Lorem ipsum dolor sit amet</li>
+        <li>Donec quam felis ultricies</li>
+        <li>Nulla consequat massa quis</li>
+        <li>Etiam ultricies nisi vel</li>
+        <li>Donec vitae sapien ut libero</li>
+      </ul>
+      <!-- 4.2.11 Creating Ordered Lists Using ol and li -->
+      <h2>Numbered bullet list with ol</h2>
+      <ol>
+        <li>Lorem ipsum dolor sit amet</li>
+        <li>Donec quam felis ultricies</li>
+        <li>Nulla consequat massa quis</li>
+        <li>Etiam ultricies nisi vel</li>
+        <li>Donec vitae sapien ut libero</li>
+      </ol>
+      <!-- 4.2.12 Reversing the Number of an Order List -->
+      <ol reversed>
+        <li>Lorem ipsum dolor sit amet</li>
+        <li>Donec quam felis ultricies</li>
+        <li>Nulla consequat massa quis</li>
+        <li>Etiam ultricies nisi vel</li>
+        <li>Donec vitae sapien ut libero</li>
+      </ol>
+      <!-- 4.2.13 Changing the Numbering of an Ordered List -->
+      <ol start="20">
+        <li>Lorem ipsum dolor sit amet</li>
+        <li>Donec quam felis ultricies</li>
+        <li>Nulla consequat massa quis</li>
+        <li value="101">Etiam ultricies nisi vel</li>
+        <li>Donec vitae sapien ut libero</li>
+      </ol>
+      <!-- 4.2.14 Nesting Lists within Each other -->
+      <h2>Nesting bullet lists ul</h2>
+      <ul>
+        <li>
+          Lorem ipsum dolor sit amet
+          <ul>
+            <!-- Start: 1. Nesting -->
+            <li>Donec quam felis ultricies</li>
+            <li>Nulla consequat massa quia</li>
+          </ul>
+          <!-- End: 1. Nesting -->
+        </li>
+        <li>Etiam ultricies nisi vel</li>
+        <li>Donec vitae sapien ut libero</li>
+      </ul>
+      <h2>Nesting numbered lists ol</h2>
+      <ol>
+        <li>
+          Lorem ipsum dolor sit amet
+          <ol>
+            <!-- Start: 1. Nesting -->
+            <li>Donec quam felis ultricies</li>
+            <li>Nulla consequat massa quis</li>
+          </ol>
+          <!-- End: 1. Nesting -->
+        </li>
+        <li>Etiam ultricies nisi vel</li>
+        <li>Donec vitae sapien ut libero</li>
+      </ol>
+      <h2>Deeper nesting and mixing lists</h2>
+      <ol>
+        <li>
+          Lorem ipsum dolor sit amet
+          <ol>
+            <!-- Start 1. Nesting -->
+            <li>Donec quam felis ultricies</li>
+            <li>
+              Nulla consequat massa quis
+              <ol>
+                <!-- Start: 2. Nesting -->
+                <li>Donec quam felis ultricies</li>
+                <li>Nulla consequat massa quis</li>
+              </ol>
+              <!-- End: 2. Nesting-->
+            </li>
+          </ol>
+          <!-- End: 1. Nesting -->
+        </li>
+        <li>
+          Etiam ultricies nisi vel
+          <ul>
+            <!-- Start: 1. Nesting (bullet point) -->
+            <li>Donec quam felis ultricies</li>
+            <li>Nulla consequat massa quis</li>
+          </ul>
+          <!-- End: 1. Nesting (bullet point)  -->
+        </li>
+        <li>Donec vitae sapien ut libero</li>
+      </ol>
+    </article>
+  </body>
+</html>
