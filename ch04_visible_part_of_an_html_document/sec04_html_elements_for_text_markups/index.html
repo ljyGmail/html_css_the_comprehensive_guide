@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Document</title>
+    <meta charset="UTF-8" />
+    <style>
+        /* 4.4.10 For Advanced Users: Setting Custom Quotation Marks */
+        q {quotes: '>>' '<<' '>' '<';}
+
+        .spell-checker{
+            border-bottom: 1px dotted red;
+        }
+    </style>
+  </head>
+  <body>
+    <h2>4.4.1 Marking Up Abbreviations or Acronyms Using abbr</h2>
+    <p>
+      The <abbr title="world wide web">WWW</abbr> is teeming with abbreviations.
+    </p>
+    <h2>4.4.2 Marking Up Text as the Source of a Working Title Using cite</h2>
+    <p>
+      According to the book
+      <cite>HTML and CSS - The Comprehensive Handbook</cite> it should read:
+      <blockquote>In HTML 4.01, this element was also used for short quotations. 
+        In new HTML, seamntic meaning has ben converted and should now only be used for working titles.</blockquote>
+    </p>
+    <h2>4.4.3 Marking Up Computer Code Representation using code and pre</h2>
+    <h2>Computer code with <code>code</code></h2>
+    <p>The <code>code</code> element does not contain any attributes.</p>
+    <p>This is a source code snippet of a C program:</p>
+    <pre><code> #include &lt;stdio.h&gt;
+
+int main(void)
+{
+    puts("Hello World!");
+    return 0;
+}</code> </pre>
+    <h2>4.4.4 Keyboard Input Using kbd and Program Output Using samp</h2>
+    <p>You can use <kbd>Strg</kbd> + <kbd>A</kbd> to mark up the entire text.</p>
+<pre>term#1&gt; <kbd>gcc -o Wall hello hello.c</kbd>
+term#1&gt; <kbd>./hello</kbd>
+<samp>Hello World!</samp>
+term#1&gt;</pre>
+    <h2>4.4.5 Marking Up Text as a Definition Using dfn</h2>
+    <p>A <dfn>smartphone</dfn>-as opposed to a cell phone-provides more
+    computer functionality and better connectivity.</p>
+    <p>A <dfn><abbr>smartphone</abbr></dfn>-as opposed to a cell phone-provides
+    more computer functionality and better connectivity.</phone-provides></p>
+    <h2>4.4.6 Marking Up Text as a Variable Using var</h2>
+    <p>The radius <var>r</var> is equal to half the diameter <var>d</var>.</p>
+    <h2>4.4.7 Changing the Text Direction Using bdo and bdi</h2>
+    <p><bdo dir="rtl">Never odd or even</bdo></p>
+    <h2>4.4.8 Emphasizing Text Using em, strong, i, and b</h2>
+    <p><em>Bear</em>! Who the hell is this <em>Bear</em>!</p>
+    <p><strong>Caution!</strong> <em>Bear</em> could be standing behind you!</p>
+    <p><strong>Delivery date in <strong><em>summer 2022</em></strong></strong></p>
+    <h2>4.4.9 Highlighting Text Using mark</h2>
+    <p>In 2021, profits have increased by
+        <mark>100 percent</mark>.
+    </p>
+    <p>Here is a source code snippet of a C program:</p>
+    <pre><code>#include &lt;stdio.h&gt;
+
+int main(void)
+{
+    <mark>puts("Hello world!");</mark>
+    return 0;
+}</code></pre>
+    <h2>4.4.10 Placing Text between Quotes Using q</h2>
+    <p>Wolf asked: <q cite="http://tom-bear.com/">
+        <em>Bear</em>! Who the hell is this <em>Bear</em></q>
+    </p>
+    <p>For replied: <q>Caution! <q><em>Bear</em></q> could be
+        standing behind you!</q>
+    </p>
+    <h2>4.4.11 Underlining or Crossing Out Text Using u and s</h2>
+    <p>You can place a text in the middle with
+        <s><code>&lt;center&gt;</code> or</s> the
+        CSS feature <code>text-algin</code> and the value
+        <var>center</var>
+    </p>
+    <p>我来自
+    <u>德国</u> = I am from GErmany.</p>
+    <p>Also, <u class="spell-checker">spelling errors</u>
+        can be marked with it.
+    </p>
+    <h2>4.4.12 Marking Changes of Text Using ins and del</h2>
+    <del>
+        <p>The singer performs on 1/1/2024 in the concert hall!</p>
+    </del>
+    <ins>
+        <p>The concert was canceled,
+            because the singer is sick!</p>
+    </ins>
+    <h2>4.4.13 Displaying Text as Superscript or Subscript Using sup and sub</h2>
+    <p><sup>[1]</sup> Reaction scheme: 2 H<sub>2</sub>O
+        &RightArrow; 2 H<sub>2</sub> + O<sub>2</sub></p>
+    <p><sup>[2]</sup> Calculate circular area: A = &pi; * r
+        <sup>2</sup></p>
+    <h2>4.4.14 Marking Dates and Times Using time</h2>
+    <p>We met on my <time datetime="2023-11-12">
+        44th birthday</time> at <em>Bear's place</em>.
+        <time datetime="20:00">at 8 pm.</time>
+    </p>
+    <p>We met on my <time datetime="2023-11-12T20:00+00:00">
+        44th birthday</time> at <em>Bear's place</em> at 8pm.
+    </p>
+    <p>We met on my <time>2023-11-12</time> at <em>Bear's place</em>
+        at <time>20:00</time>
+    </p>
+    <p>On every <time datetime="11=12">birthday</time>
+        I got flowers.
+    </p>
+    <p>The concert in the photo was recorded sometime in
+        <time datetime="2023-08">August</time>
+        this year.
+    </p>
+    <p>the rock festival lasted <time datetime="P3D">3 days</time>.</p>
+    <h2>4.4.15 Marking the Small Print Using small</h2>
+    <article>
+        <header>
+            <h2>Small print with small</h2>
+            <small>&copy; John Doe;
+            <time datetime="2024-01-01">January 1, 2024</time></small>
+        </header>
+        <p>The shipment can be delivered in <time datetime="P2D">2 days</time>.
+        <small>(Due to high demand
+            it can also take longer (+1 day)).</small>
+        </p>
+    </article>
+    <h2>4.4.16 Using ruby, rp, and rt for Annotations about Pronunciation</h2>
+    <p>
+        <ruby>
+            LOL<rp>(</rp><rt>Laugh Out Loud</rt><rp>)</rp>
+        </ruby>
+    </p>
+    <h2>4.4.17 Grouping Ranges of Individual Text Passages Using span</h2>
+    <p>Current temperature <span id="temp">64</span> F</p>
+    <p>Formatting with <span style="text-decoration: overline;">CSS</span> and the span element.</p>
+  </body>
+</html>
