@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Comining Columns or Rows Using colspan or rowspan</title>
+    <meta charset="UTF-8" />
+    <style>
+      /* 5.1.3 HTML Attributes for the Table Elements */
+      table,
+      td,
+      th {
+        border: 1px solid gray;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Daily schedule (colspan)</h1>
+    <table>
+      <tr>
+        <th></th>
+        <th scope="col">Morning</th>
+        <th scope="col">Noon</th>
+        <th scope="col">Afternoon</th>
+      </tr>
+      <tr>
+        <th scope="row">Monday</th>
+        <td colspan="2">Photo shooting (outdoor)</td>
+        <td>Image editing workshop</td>
+      </tr>
+      <tr>
+        <th scope="row">Tuesday</th>
+        <td>Street photography (city)</td>
+        <td colspan="2">Photo shooting (portrait)</td>
+      </tr>
+      <tr>
+        <th scope="row">Wednesday</th>
+        <td>Nude photography</td>
+        <td>Image editing workshop</td>
+        <td>Closing ceremony</td>
+      </tr>
+      <tr>
+        <th scope="row">Thursday</th>
+        <td colspan="3">Study HTML and CSS</td>
+      </tr>
+    </table>
+    <h1>Daily schedule (rowspan)</h1>
+    <table>
+      <tr>
+        <th></th>
+        <th scope="col">Morning</th>
+        <th scope="col">Noon</th>
+        <th scope="col">Afternoon</th>
+      </tr>
+      <tr>
+        <th scope="row">Monday</th>
+        <td colspan="2">Photo shooting (outdoor)</td>
+        <td>Image editing workshop</td>
+      </tr>
+      <tr>
+        <th scope="row">Tuesday</th>
+        <td rowspan="2">Street photography (city)</td>
+        <td colspan="2">Photo shooting (portrait)</td>
+      </tr>
+      <tr>
+        <th scope="row">Wednesday</th>
+        <td>Image editing workshop</td>
+        <td>Closing ceremony</td>
+      </tr>
+    </table>
+  </body>
+</html>
