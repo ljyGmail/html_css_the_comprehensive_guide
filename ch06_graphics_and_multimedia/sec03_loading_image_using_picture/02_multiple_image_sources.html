@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Multiple Image Sources with the HTML Attribute srcset</title>
+    <meta charset="UTF-8" />
+  </head>
+  <body>
+    <h1>The picture element in use</h1>
+    <p>
+      <picture>
+        <source
+          media="(min-width: 1024px)"
+          srcset="
+            ../../images/ch06/sec03_picture/HK-1024.jpg,
+            ../../images/ch06/sec03_picture/HK-1024-hd.jpg 2x
+          "
+        />
+        <source
+          media="(min-width: 640px)"
+          srcset="
+            ../../images/ch06/sec03_picture/HK-640.jpg,
+            ../../images/ch06/sec03_picture/HK-640-hd.jpg 2x
+          "
+        />
+        <source
+          media="(min-width: 480px)"
+          srcset="
+            ../../images/ch06/sec03_picture/HK-480.jpg,
+            ../../images/ch06/sec03_picture/HK-480-hd.jpg 2x
+          "
+        />
+        <!-- Fallback for old browsers -->
+        <img
+          src="../../images/ch06/sec03_picture/HK-480.jpg"
+          alt="Hong Kong Island"
+        />
+      </picture>
+    </p>
+  </body>
+</html>
