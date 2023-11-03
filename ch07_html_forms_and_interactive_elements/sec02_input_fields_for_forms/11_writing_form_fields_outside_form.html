@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Writing Form Fields outside of &lt;form&gt;</title>
+    <meta charset="UTF-8" />
+  </head>
+  <body>
+    <h1>Writing form fields outside of form</h1>
+    <form id="form1" method="post" action="/test.php">
+      Subject: <input type="text" name="subject" /><br />
+      Your message:<br />
+      <textarea name="txt" cols="50" rows="15" maxlength="2500">
+Enter your message here...</textarea
+      ><br />
+    </form>
+
+    <h2>Lorem ispsum</h2>
+    <p>
+      Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo
+      ligula eget dolr. Lorem ipsum dolor sit amet, consectetuer adipiscing
+      elit. Aenean commodo ligula eget dolr. Lorem ipsum dolor sit amet,
+      consectetuer adipiscing elit. Aenean commodo ligula eget dolr.
+    </p>
+
+    <p>
+      <input type="submit" value="Absenden" style="width: 80px" form="form1" />
+      <input type="reset" value="Abbrechen" style="width: 80px" form="form1" />
+    </p>
+  </body>
+</html>
