@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Controlling Error Messages for Input Fields - 1</title>
+    <meta charset="UTF-8" />
+    <style>
+      input[type="email"]:invalid + label::after {
+        color: red;
+        content: " x";
+      }
+
+      input[type="email"]:valid + label::after {
+        color: green;
+        content: " ✓";
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Check email address</h1>
+    <form>
+      Email
+      <input type="email" placeholder="E-Mail" id="em" required autofocus />
+      <label for="em"></label>
+      <input type="submit" />
+    </form>
+  </body>
+</html>
