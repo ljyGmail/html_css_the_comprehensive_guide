@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>A Dialog Box via &lt;dialog&gt;</title>
+    <meta charset="UTF-8" />
+    <style>
+      dialog {
+        background: lightgray;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Dialog box with dialog</h1>
+
+    <dialog id="dialog1" open>
+      <p>
+        Exit dialog?<br />
+        <input
+          type="button"
+          value="Close"
+          onclick="document.getElementById('dialog1').close()"
+        />
+      </p>
+    </dialog>
+  </body>
+</html>
