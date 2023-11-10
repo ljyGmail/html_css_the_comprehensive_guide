@@ -1,0 +1,11 @@
+:target {
+  background: lightgray;
+}
+
+div#show {
+  display: none;
+}
+
+div#show:target {
+  display: block;
+}

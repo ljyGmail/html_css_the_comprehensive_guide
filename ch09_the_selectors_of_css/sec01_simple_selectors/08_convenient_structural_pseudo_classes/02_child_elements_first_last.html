@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Structrual Pseudo-Classes for Child Elements</title>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="02_child_elements_first_last.css" />
+  </head>
+  <body>
+    <h1>:first-child inside body</h1>
+    <p>
+      Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo
+      ligula eget dolor.
+    </p>
+    <h2>:first-child and :last-child on table</h2>
+    <table>
+      <tbody>
+        <tr>
+          <td>:first-child in tr</td>
+          <td>Text only</td>
+          <td>:last-child in tr</td>
+        </tr>
+        <tr>
+          <td>:first-child in tr</td>
+          <td>Text only</td>
+          <td>:last-child in tr</td>
+        </tr>
+      </tbody>
+    </table>
+    <ul>
+      <li>This is select by :first-child in ul.</li>
+      <li>This will not be selected.</li>
+      <li>This will not be selected.</li>
+      <li>This is select by :last-child in ul.</li>
+    </ul>
+    <p>This is selected by :last-child of body.</p>
+  </body>
+</html>

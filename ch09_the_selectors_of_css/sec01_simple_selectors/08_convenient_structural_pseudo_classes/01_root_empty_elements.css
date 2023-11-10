@@ -1,0 +1,12 @@
+:root {
+  color: lightgrey;
+}
+
+:empty {
+  background-color: yellow;
+  padding: 10px;
+}
+
+td:empty {
+  background-color: green;
+}

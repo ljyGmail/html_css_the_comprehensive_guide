@@ -1,0 +1,16 @@
+a:link {
+  color: red;
+}
+
+a:visited {
+  color: green;
+}
+
+.articlestyle a:any-link {
+  color: gray;
+}
+
+/* Chrome and Opera */
+.articlestyle a:-webkit-any-link {
+  color: blueviolet;
+}

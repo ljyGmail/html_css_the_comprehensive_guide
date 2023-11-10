@@ -1,0 +1,23 @@
+/* style.css */
+
+/* Black dotted frame;
+    Distance to the next element: 5px;
+    Fill with 3 pixels and center text
+*/
+
+* {
+  margin: 5px;
+  padding: 3px;
+  border: 1px dotted black;
+  text-align: center;
+}
+
+/* Thicker frame around the main element */
+main {
+  border: 2px solid red;
+}
+
+/* Thicker frame around all HTML elements with the main element */
+main * {
+  border: 2px solid green;
+}

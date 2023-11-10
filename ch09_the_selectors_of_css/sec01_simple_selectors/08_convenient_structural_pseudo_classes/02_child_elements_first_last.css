@@ -1,0 +1,11 @@
+* {
+  background-color: white;
+}
+
+:first-child {
+  border: 2px solid red;
+}
+
+:last-child {
+  border: 2px dotted gray;
+}
