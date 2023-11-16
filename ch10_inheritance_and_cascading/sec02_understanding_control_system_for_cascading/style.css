@@ -1,0 +1,29 @@
+/* 0,0,1,0 */
+.aclass {
+  color: green;
+}
+
+/* 0,1,1,1 */
+#index li.aclass {
+  color: orange;
+}
+
+/* 0,0,0,1 */
+li {
+  color: red;
+}
+
+/* 0,0,1,1 */
+li.aclass {
+  color: blue;
+}
+
+/* 0,0,0,4 */
+body article ul li {
+  color: yellow;
+}
+
+/* 0,1,0,1 */
+#index li {
+  color: gray;
+}
