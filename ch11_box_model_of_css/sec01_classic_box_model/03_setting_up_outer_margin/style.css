@@ -1,0 +1,15 @@
+.article_01 {
+  width: 600px;
+  padding: 5px;
+  border: 5px solid sienna;
+  background-color: antiquewhite;
+  margin: 10px 0;
+}
+
+.headfoot {
+  width: 600px;
+  padding: 5px;
+  border: 5px solid sienna;
+  background-color: sandybrown;
+  text-align: center;
+}

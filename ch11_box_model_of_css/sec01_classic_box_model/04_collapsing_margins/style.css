@@ -1,0 +1,16 @@
+.headfoot {
+  width: 600px;
+  padding: 5px;
+  border: 5px solid peru;
+  background-color: antiquewhite;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.article_01 {
+  width: 600px;
+  padding: 5px;
+  border: 5px solid sienna;
+  background-color: antiquewhite;
+  margin: 10px 0;
+}
