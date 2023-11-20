@@ -2,3 +2,5 @@
 *.ogg
 *.webm
 *.mp3
+
+.idea/
